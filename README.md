@@ -1,4 +1,4 @@
-# Active Learning with the nnUNet and sample selection with Uncertainty-Aware Submodular Mutual Information Measure
+# Active Learning with the nnUNet and Sample Selection with Uncertainty-Aware Submodular Mutual Information Measure
 
 This repository contains code of the experiments conduced for the paper titled 'Active Learning with nnUNet and Sample Selection with Uncertainty-Aware Submodular Mutual Information Measure' of the MIDL2024 conference.
 
@@ -93,12 +93,12 @@ python UNetXAL3D.py --dataset=Hippocampus --strategy=FULL --fold=0 --func=alfull
 After conduction active learning experiments, please check the output folder for trained nnUNet models and validation results.
 
 ## Contributing
-Bernhard Föllmer
-Charité - Universitätsmedizin Berlin
-Klinik für Radiologie
-Campus Charité Mitte (CCM)
-Charitéplatz 1
-10117 Berlin
-E-Mail: bernhard.foellmer@charite.de
-Tel: +49 30 450 527365
-http://www.charite.de
+Bernhard Föllmer\
+Charité - Universitätsmedizin Berlin\
+Klinik für Radiologie\
+Campus Charité Mitte (CCM)\
+Charitéplatz 1\
+10117 Berlin\
+E-Mail: bernhard.foellmer@charite.de\
+Tel: +49 30 450 527365\
+http://www.charite.de\
