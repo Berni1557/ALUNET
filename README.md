@@ -6,42 +6,32 @@ A new version will be available soon.
 
 ## Installation
 For dependencies please check environment.yml.
+The installation has been tested on Ubuntu 18.04.5 LTS.
 
 ### Setting up using conda (some packages might not be optional)
 ```
 conda create -n env_alunet python=3.9
 conda activate env_alunet
-conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 cudatoolkit=11.3 -c pytorch -c conda-forge
-pip install spyder
-git clone https://github.com/MIC-DKFZ/nnUNet.git
-cd nnUNet
-pip install -e .
-pip install dirsync
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytables -c conda-forge
 pip install opencv-python
 pip install pynrrd
-conda install pytables -c conda-forge
 conda install -c anaconda h5py
 pip install imblearn
 pip install imutils
-conda install -c conda-forge tensorboard
 pip install keyboard
 pip install xgboost
-conda install -c conda-forge torchmetrics
 conda install -c conda-forge pingouin
+pip install torchcontrib
+pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ submodlib
+cd submodlib
+pip install .
+pip install scikit-learn
+git clone https://github.com/decile-team/submodlib.git
+pip install kneed
+conda install -c conda-forge umap-learn
 conda remove krb5 --force -y
 conda install krb5==1.15.1 --no-deps -y
-pip install torchcontrib
-pip install tqdm
-conda install -c conda-forge matplotlib
-pip install more-itertools
-pip install PyYAML
-conda install -c simpleitk simpleitk
-conda install -c anaconda pandas
-pip install scikit-image
-pip install nibabel
-pip install nnunetv2
-pip install psutil
-conda install -c conda-forge pingouin
 ```
 
 Install nnUnet following the installation instructions [nnUNet](https://github.com/MIC-DKFZ/nnUNet).
